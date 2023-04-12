@@ -1,0 +1,16 @@
+body {
+    border: 1px solid #000;
+    font-size: 20px;
+}
+
+/* jutro app styles (e.g. overrides for jutro-core styles) */
+.test {
+    color: green;
+}
+
+/* jutro-core styles, can be later in the order because of the different webpack imports order */
+@layer jutro-core {
+    .test {
+        color: red;
+    }
+}
